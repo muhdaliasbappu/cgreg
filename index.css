@@ -1,0 +1,40 @@
+.body{
+background-color: #ffa279;
+width: 100%;
+height: 10000%;
+}
+.dis{
+    background-color: #ffffff;
+ 
+   
+}
+.logo{
+   
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+   
+}
+.heading{
+     color: rgb(255, 255, 255);
+     font-family: sans-serif;
+}
+.bot{
+    width:100%;
+    height: 100px;
+    color: white;
+    padding-top: 30px;
+}
+.join{
+    margin: 0 auto;
+}
+.siz{
+    font-size: large;
+}
+.cons{
+    padding-top: 100px;
+}
+.fpp{
+    padding-top: 30px;
+}

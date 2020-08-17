@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiftCraftStore</title>
+    <link rel="icon" href="logo.jpeg" type="image/jpeg" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="giff.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="body col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+
+<section class="2">
+<nav class="navbar navbar-light ">
+    <a class="navbar-brand" href="#">
+      <img src="logoo.JPG" width="295px"  alt="" loading="lazy" class="logo">
+    </a>
+  </nav>   
+</section>
+
+<section class="cons" id="home">
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="f1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="f2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="f3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+
+
+
+
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="mt-5 col-xs-12 col-sm-12 col-md-6 join ">
+            <div class="card text-center">
+             <div class="card-body dis">
+              <h5 class="card-title text-center">Join us:</h5>
+               <p class="card-text siz">Register to us through whatsapp or the application form below as per your convenience. All further communication will be directed through
+                 whatsapp in the provided number
+               </p>
+                     
+                     <a href="#loginsec" class="btn btn-info join mt-3" >Application form</a>    
+                     <a href="https://wa.me/message/FF4M364VEQATC1" class="btn btn-success join mt-3">Whatsapp </a>   
+                   
+          
+             </div>
+             
+            </div>
+        </div>
+        <h1 class="text-center heading mt-5">About us:</h1>
+    <div class="row">    
+    
+        <div class="card mt-5 " >
+            <div class="card-body dis ">
+             <p> Giftcraft aims to provide a platform where artists are integrated to bring out a profitable
+              market for their products. We are developing a community wherein crafters across the globe
+              can exhibit and sell their products in varied quantity and to wide spread locations. We provide
+              marketing and promoting services for your products and help every single craft maker with us
+              to develop their products as a brand. Giftcraft will be a pathway to huge market for all the fellow
+              crafter who make the wise decision to join us.</p>
+            <p>  Giftcraft also supports artists to improve and develop the quality and market value of their
+              product by different online skill development programs. Giftcraft also aims to help artists build
+              capital for their creations in future by providing materials and other necessities as per needs.</p>
+            <p>  We have developed a site which is being improved every single moment. Giftcraft truly is the
+              gateway to success for individual artists by giving them access to the wide spread market
+              integrated by our site and their product promoted by giftcraft.</p>
+            </div>
+          </div>
+    </div>
+    </div>
+</section> 
+<section id="loginsec">
+  <div class="container">
+
+    <div class="mt-5 col-xs-12 col-sm-12 col-md-6 join ">
+        <div class="card text-center">
+         <div class="card-body dis">
+          <h5 class="card-title text-center">Application form: :</h5>
+          
+          
+          <form class="fpp" id="submit-form" action="">
+            <div class="form-group">
+              
+              <label for="Name">Name</label>
+               <input type="text" class="form-control" id="Name" name="Name"   required>
+                
+              
+              <label for="Number" class="p-2">Mobile number</label>
+              <input type="number" class="form-control" id="Number" aria-describedby="numHelp"  name="Number"   required>
+              <small id="numHelp" class="form-text text-muted"> All further communication will be directed through whatsapp in the provided number.</small>
+                 
+              
+              <label for="Email" class="p-2">Email address</label>
+              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" name="Email"   >
+              <small id="emailHelp" class="form-text text-muted"></small>
+          
+              
+              
+              <label for="zipcode" class="p-2">Pin code</label>
+              <input type="text" class="form-control" id="zipcode"  name="zipcode"  >
+                
+            </div> 
+            
+            <button class="btn btn-info col-md-4 mb-3 join mt-5" type="submit">Submit form</button>
+          </form>
+      
+        
+        </div>
+         
+        </div>
+    </div>
+  
+</section>  
+<section>
+    <div class="bot">
+       
+        <p class="text-center pt-4" style="font-size: small;">
+           The GiftCraft store
+          
+        </p>
+
+    </div>
+</section>
+
+    
+ 
+    
+ </header>  
+ <script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbyuBCnWIUqE87VB8H7mmwf6q9x_AaMtQ2Rbdc_G/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
